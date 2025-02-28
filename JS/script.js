@@ -121,9 +121,91 @@
 // }
 
 
-const num = 50;
+// let num = 50;
 
-while (num < 55) {
+// while (num <= 55) {
+//     console.log(num);
+//     num++;
+// }
+
+// do {
+//     console.log(num);
+//     num++;
+// }
+// while (num < 55);
+
+// for (let i = 1; i < 10; i++) {
+//     if (i === 6) {
+//         // break;
+//         continue;
+//     }
+//     console.log(i);
+    
+// }
+
+// for (let i = 0; i < 3; i++) {
+//     console.log(i);
+//     for (let j = 0; j < 3; j++) {
+//         console.log(j);
+//     }
+// }
+
+// let result = '';
+// const lenght = 7;
+
+// for (let i = 1; i < lenght; i++) {
+
+//     for (let j = 0; j < i; j++) {
+//         result += "*";
+//     }
+
+//     result += '\n'
+// }
+
+// console.log(result);
+
+// first: for (let i = 0; i < 3; i++) {
+//     console.log(`First level: ${i}`);
+//     for (let j = 0; j < 3; j++) {
+//         console.log(`Second level: ${j}`);
+//         for (let k = 0; k < 3; k++) {
+//             if (k === 2) continue first;
+//             console.log(`Third level: ${k}`);
+//         }
+//     }
+// }
+
+// let num = 5;
+
+// while (num <= 10) {
+//     console.log(num);
+//     num++;
+// }
+
+// for (let i = 20; i > 10; i--) {
+//     if (i === 13) {
+//         break;
+//     }
+//     console.log(i);
+// }
+
+// for (let i=2; i < 11; i++) {
+//     if (i % 2 === 1) continue;
+//     console.log(i);
+// }
+
+for (let i = 2; i <= 16; i++) {
+    if (i % 2 === 0) {
+        continue;
+    } else {
+        console.log(i);
+    }
+}
+
+let num = 2;
+
+while (num <= 16) {
+    num++
+    while (num % 2 ===0)
     console.log(num);
-    num++;
 }
