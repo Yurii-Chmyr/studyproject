@@ -119,3 +119,11 @@
 // if (hamburger === 3 && cola || fries === 3 && nuggets) {
 //    console.log('Done!')
 // }
+
+
+const num = 50;
+
+while (num < 55) {
+    console.log(num);
+    num++;
+}
