@@ -331,15 +331,15 @@
 
 // console.log(personalMovieDB);
 
-let num = 20;
-function showFirstMessage(text) {
-    console.log(text);
-    // let num = 10;
-    console.log(num);
-}
+// let num = 20;
+// function showFirstMessage(text) {
+//     console.log(text);
+//     // let num = 10;
+//     console.log(num);
+// }
 
-showFirstMessage("Hello World!");
-console.log(num);
+// showFirstMessage("Hello World!");
+// console.log(num);
 
 // function calc(a, b) {
 //     return (a + b);
@@ -350,19 +350,94 @@ console.log(num);
 // console.log(calc(10, 6));
 
 
-function ret() {
-        let num = 50;
-        return num;
+// function ret() {
+//         let num = 50;
+//         return num;
+// }
+
+// const anotherNum = ret();
+// console.log(anotherNum);
+
+// const logger = function() {
+//     console.log('Hello');
+
+// };
+
+// logger();
+
+// const calc = (a, b) => { return a + b };
+
+// const usdCurr = 28;
+// const eurCurr = 32;
+
+// function convert (amount, curr) {
+//     console.log(curr * amount);
+// }
+
+// convert(500, usdCurr);
+// convert(500, eurCurr);
+
+// const usdCurr = 28;
+// const discount = 0.9;
+
+// function convert (amount, curr) {
+//     return curr * amount;
+// }
+
+// function promotion(result) {
+//     console.log(result * discount);
+// }
+
+// const res = convert(500, usdCurr);
+
+// promotion(res);
+
+// function test() {
+//     for (let i = 0; i < 5; i++) {
+//         console.log(i);
+//         if (i === 3) return
+//     }
+//     console.log('Done');
+// }
+
+// test();
+
+// function doNothing() {}
+// console.log(doNothing() === undefined);
+
+function sayHello(name) {
+    return `Привет, ${name}!`;
 }
 
-const anotherNum = ret();
-console.log(anotherNum);
+sayHello('Alex');
 
-const logger = function() {
-    console.log('Hello');
 
-};
+function returnNeighboringNumbers(num) {
+    return [num - 1, num, num + 1];
+}
 
-logger();
+returnNeighboringNumbers(5);
 
-const calc = (a, b) => { return a + b };
+
+function getMathResult(num, times) {
+    if (typeof(times) !== 'number' || times <= 0) {
+        return num;
+    }
+
+    let str = '';
+
+    for (let i = 1; i <= times; i++) {
+        if (i === times) {
+            str += `${num * i}`;
+            // Тут без черточек в конце
+        } else {
+            str += `${num * i}---`;
+            // Это тоже самое, что и
+            // str = str + num * i + "---"
+        }
+    }
+
+    return str;
+}
+
+getMathResult(10, 5);
