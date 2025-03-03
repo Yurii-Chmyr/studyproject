@@ -467,3 +467,197 @@
 // const test = "12.2px";
 // console.log(parseFloat(test));
 
+// let numberOfFilms;
+
+// function start () {
+//     numberOfFilms = +prompt('Скільки фільмів ви вже подивились?', '');
+
+//     while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+//           numberOfFilms = +prompt('Скільки фільмів ви вже подивились?', '');
+
+//     }
+// }
+
+// start();
+
+// const personalMovieDB = {
+//    count: numberOfFilms,
+//    movies: {},
+//     actors: {},
+//     genres: [],
+//    privat:false
+
+// };
+
+// function rememberMyFilms() {
+// for (let i = 0; i < 2; i++) { 
+//     const a = prompt('Один із останніх переглянутих фільмів?', ''),
+//           b = prompt('На скільки ви його оціните?', '');
+
+//           if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//             personalMovieDB.movies[a] = b;
+//             console.log('done');
+//           } else {
+//             console.log('error');
+//             i--;
+//           }
+//         }
+// }   
+
+// rememberMyFilms();
+
+// function detectPersonalLevel() {
+//     if (personalMovieDB.count < 10) {
+//         console.log("Переглянуто мало фільмів");
+//     } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//         console.log("Ви класичний глядач");
+
+//     } else if (personalMovieDB.count >= 30) {
+//         console.log("Ви кіноман!");
+//     } else {
+//         console.log("Сталась помилка!");
+//     }
+// }
+   
+// detectPersonalLevel();
+
+// const personalMovieDB = {
+//     count: 1,
+//     movies: {},
+//      actors: {},
+//      genres: [],
+//     privat:false
+ 
+//  };
+ 
+
+// function showMyDb(hidden) {
+//     if (!hidden) {
+//         console.log(personalMovieDB)
+//     }
+        
+// }
+
+// showMyDb(personalMovieDB.privat);
+
+// function writeYourGenres() {
+//     for ( let i = 1; i <= 3; i++) {
+//        const genre = prompt(`Ваш улюблений жанр під номером ${i}`);
+//        personalMovieDB.genres[i - 1] = genre;
+//     } 
+    
+// }
+
+// writeYourGenres();
+
+
+// console.log(personalMovieDB);
+
+
+
+// function calculateVolumeAndArea(length) {
+//     if (typeof (length) !== 'number' || length < 0 || !Number.isInteger(length)) {
+//         return "При вычислении произошла ошибка";
+//     }
+
+//     let volume = 0,
+//         area = 0;
+
+//     volume = length * length * length;
+//     // length ** 3 - это тоже самое, что и выше или варианты через цикл.
+//     // ** - это оператор степени, напоминаю. Но онлайн редактор его не принимает =/
+//     area = 6 * (length * length);
+
+//     return `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
+// }
+
+// calculateVolumeAndArea(5);
+
+// function getCoupeNumber(seatNumber) {
+//     if (typeof (seatNumber) !== 'number' || seatNumber < 0 || !Number.isInteger(seatNumber)) {
+//         return "Ошибка. Проверьте правильность введенного номера места";
+//     }
+
+//     if (seatNumber === 0 || seatNumber > 36) {
+//         return "Таких мест в вагоне не существует";
+//     }
+
+//     return Math.ceil(seatNumber / 4);
+//     // тут очень много вариантов решения, но выбрал один из элегантных :)
+// }
+
+// getCoupeNumber(33);
+
+// function getTimeFromMinutes(minutesTotal) {
+//     if (typeof(minutesTotal) !== 'number' || minutesTotal < 0 || !Number.isInteger(minutesTotal)) {
+//         return "Ошибка, проверьте данные";
+//     }
+
+//     const hours = Math.floor(minutesTotal / 60);
+//     const minutes = minutesTotal % 60;
+
+//     let hoursStr = '';
+
+//     switch (hours) {
+//         case 0: 
+//             hoursStr = 'часов';
+//             break;
+//         case 1:
+//             hoursStr = 'час';
+//             break;
+//         case 2:
+//         case 3:
+//         case 4:
+//             hoursStr = 'часа';
+//             break;
+//         default:
+//             hoursStr = 'часов';
+//     }
+
+//     return `Это ${hours} ${hoursStr} и ${minutes} минут`;
+// }
+
+// getTimeFromMinutes(180)
+
+// function findMaxNumber(a, b ,c, d) {
+//     // Самое простое - это использовать Math.max :)
+//     // А оптимизировать такую проверку мы научимся совсем скоро
+//     if (typeof(a) !== 'number' ||
+//         typeof(b) !== 'number' ||
+//         typeof(c) !== 'number' ||
+//         typeof(d) !== 'number') {
+//         return 0;
+//     } else {
+//         return Math.max(a, b ,c, d);
+//     }
+// }
+
+// findMaxNumber(1, 5, 6.6, 10.5);
+// findMaxNumber(1, 5, '6', '10');
+
+function fib(num) {
+    if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
+        return "";
+    }
+
+    let result = '';
+    let first = 0;
+    let second = 1;
+
+    for (let i = 0; i < num; i++) {
+        if (i + 1 === num) {
+            result += `${first}`;
+            // Без пробела в конце
+        } else {
+            result += `${first} `;
+        }
+
+        let third = first + second;
+        first = second;
+        second = third;
+    }
+
+    return result;
+}
+
+fib(5);
