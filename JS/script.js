@@ -405,39 +405,65 @@
 // function doNothing() {}
 // console.log(doNothing() === undefined);
 
-function sayHello(name) {
-    return `Привет, ${name}!`;
-}
+// function sayHello(name) {
+//     return `Привет, ${name}!`;
+// }
 
-sayHello('Alex');
-
-
-function returnNeighboringNumbers(num) {
-    return [num - 1, num, num + 1];
-}
-
-returnNeighboringNumbers(5);
+// sayHello('Alex');
 
 
-function getMathResult(num, times) {
-    if (typeof(times) !== 'number' || times <= 0) {
-        return num;
-    }
+// function returnNeighboringNumbers(num) {
+//     return [num - 1, num, num + 1];
+// }
 
-    let str = '';
+// returnNeighboringNumbers(5);
 
-    for (let i = 1; i <= times; i++) {
-        if (i === times) {
-            str += `${num * i}`;
-            // Тут без черточек в конце
-        } else {
-            str += `${num * i}---`;
-            // Это тоже самое, что и
-            // str = str + num * i + "---"
-        }
-    }
 
-    return str;
-}
+// function getMathResult(num, times) {
+//     if (typeof(times) !== 'number' || times <= 0) {
+//         return num;
+//     }
 
-getMathResult(10, 5);
+//     let str = '';
+
+//     for (let i = 1; i <= times; i++) {
+//         if (i === times) {
+//             str += `${num * i}`;
+//             // Тут без черточек в конце
+//         } else {
+//             str += `${num * i}---`;
+//             // Это тоже самое, что и
+//             // str = str + num * i + "---"
+//         }
+//     }
+
+//     return str;
+// }
+
+// getMathResult(10, 5);
+
+
+// const str = "teSt";
+
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// console.log(str);
+
+// const fruit = "Some fruit";
+
+// console.log(fruit.indexOf("fruit"));
+
+// const logg = "Hello world";
+
+// console.log(logg.slice(6, 11));
+
+// console.log(logg.substring(6, 11));
+
+// console.log(logg.substr(6, 5));
+
+// const num = 12.2;
+// console.log(Math.round(num));
+
+// const test = "12.2px";
+// console.log(parseFloat(test));
+
