@@ -194,18 +194,140 @@
 //     console.log(i);
 // }
 
-for (let i = 2; i <= 16; i++) {
-    if (i % 2 === 0) {
-        continue;
-    } else {
-        console.log(i);
-    }
-}
 
-let num = 2;
 
-while (num <= 16) {
-    num++
-    while (num % 2 ===0)
-    console.log(num);
-}
+// let num = 2;
+
+// while (num <= 16) {
+//     if (num % 2 !== 0) {
+//         console.log(num);
+//     }
+//     num++;
+// }
+
+// for (let i = 5; i < 11; i++) {
+//     arrayOfNumbers[i - 5] = i;
+// }
+
+// console.log(arrayOfNumbers);
+
+// const arr = [3, 5, 8, 16, 20, 23, 50];
+//     const result = [];
+    
+
+//     result[0] = arr[0];
+//     result[1] = arr[1];
+//     result[2] = arr[2];
+//     result[3] = arr[3];
+//     result[4] = arr[4];
+//     result[5] = arr[5];
+//     result[6] = arr[6];
+
+//     console.log(result);
+
+
+// const arr = [3, 5, 8, 16, 20, 23, 50];
+// const result = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//     result[i] = arr[i];
+//     console.log(result);
+// }
+
+// const data = [5, 10, 'Shopping', 20, 'Homework'];
+
+// for (let i = 0; i < data.length; i++) {
+//     if (typeof(data[i]) === 'number') {
+//         data[i] = data[i] * 2;
+//     } else if (typeof(data[i]) === 'string') {
+//         data[i] = `${data[i]} - done`;
+//     }
+// }
+
+// console.log(data);
+// return data;
+
+// const data = [5, 10, 'Shopping', 20, 'Homework'];
+// const result = [];
+
+// for (let i = 1; i <= data.length; i++) {
+//     result[i - 1] = data[data.length - i]
+// }
+
+// console.log(result);
+// return result;
+
+
+// const lines = 5;
+// let result = '';
+
+// for (let i = 1; i < lines; i++) {
+
+//     for (let j = 0; j < i; j++) {
+//         result += "*";
+//     }
+//     result += '\n'
+//     console.log(result);
+// }
+
+// const lines = 5;
+// let result = '';
+
+// for (let i = 0; i <= lines; i++) {
+//     for (let j = 0; j < lines - i; j++) {
+//         result += " ";
+//     }
+//     for (let j = 0; j < 2 * i + 1; j++) {
+//         result += "*";
+//     }
+//     result += "\n";
+// }
+
+// console.log(result)
+
+// const numberOfFilms = +prompt('Скільки фільмів ви вже подивились?', '');
+
+// const personalMovieDB = {
+//    count: numberOfFilms,
+//    movies: {},
+//     actors: {},
+//     genres: [],
+//    privat:false
+
+// };
+
+// const a = prompt('Один із останніх переглянутих фільмів?', ''),
+//      b = prompt('На скільки ви його оціните?', ''),
+//      c = prompt('Один із останніх переглянутих фільмів?', ''),
+//      d = prompt('На скільки ви його оціните?', '');
+
+
+
+// for (let i = 0; i < 2; i++) { 
+//     const a = prompt('Один із останніх переглянутих фільмів?', ''),
+//           b = prompt('На скільки ви його оціните?', '');
+
+//           if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//             personalMovieDB.movies[a] = b;
+//             console.log('done');
+//           } else {
+//             console.log('error');
+//             i--;
+//           }
+//         }
+           
+
+// if (personalMovieDB.count < 10) {
+//         console.log("Переглянуто мало фільмів");
+//     } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//         console.log("Ви класичний глядач");
+
+//     } else if (personalMovieDB.count >= 30) {
+//         console.log("Ви кіноман!");
+//     } else {
+//         console.log("Сталась помилка!");
+//     }
+
+
+// console.log(personalMovieDB);
+
