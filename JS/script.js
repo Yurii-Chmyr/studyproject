@@ -635,29 +635,109 @@
 // findMaxNumber(1, 5, 6.6, 10.5);
 // findMaxNumber(1, 5, '6', '10');
 
-function fib(num) {
-    if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
-        return "";
-    }
+// function fib(num) {
+//     if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
+//         return "";
+//     }
 
-    let result = '';
-    let first = 0;
-    let second = 1;
+//     let result = '';
+//     let first = 0;
+//     let second = 1;
 
-    for (let i = 0; i < num; i++) {
-        if (i + 1 === num) {
-            result += `${first}`;
-            // Без пробела в конце
-        } else {
-            result += `${first} `;
-        }
+//     for (let i = 0; i < num; i++) {
+//         if (i + 1 === num) {
+//             result += `${first}`;
+//             // Без пробела в конце
+//         } else {
+//             result += `${first} `;
+//         }
 
-        let third = first + second;
-        first = second;
-        second = third;
-    }
+//         let third = first + second;
+//         first = second;
+//         second = third;
+//     }
 
-    return result;
-}
+//     return result;
+// }
 
-fib(5);
+// fib(5);
+
+// function first() {
+//     // smth
+//     setTimeout(function() {
+//         console.log(1);
+//     }, 500);
+// }
+
+// function second() {
+//     console.log(2);
+// }
+
+// first();
+// second();
+
+// function learnJS (lang, callback) {
+//     console.log(`Я вчу: ${lang}`);
+//     callback();
+// }
+
+// function done() {
+//     console.log('Я пройшов цей урок!');
+// }
+
+// learnJS('JavaScript', done);
+
+// const options = {
+//     name: 'test',
+//     width: 1024,
+//     height: 1024,
+//     colors: {
+//         border: 'black',
+//         bg: 'red'
+//     },
+//     makeTest: function() {
+//         console.log("Test");
+//     }
+// };
+
+
+// options.makeTest();
+
+
+// const {border, bg} = options.colors;
+// console.log(border);
+
+
+// console.log(Object.keys(options).length);
+
+
+// const DB = {
+//     firstName: '',
+//     lastName: '',
+//     age: '',
+//     gender: true,
+//     city: ''
+// }
+
+// console.log(Object.keys(DB).length);
+
+// console.log(options["colors"]["border"]);
+
+// delete options.name;
+
+// console.log(options);
+
+// let counter = 0;
+// for (let key in options) {
+//     if (typeof(options[key]) === 'object') {
+//         for (let i in options[key]) {
+//             console.log(`Властивість ${i} має значення ${options[key][i]}`)
+//             counter++;
+//         }
+//     } else {
+//         console.log(`Властивість ${key} має значення ${options[key]}`)
+//         counter++;
+//     }
+// };
+
+// console.log(counter);
