@@ -1199,31 +1199,31 @@
 
 // console.log(typeof([] + false));
 
-const restorantData = {
-    menu: [
-        {
-            name: 'Salad Caesar',
-            price: '14$'
-        },
-        {
-            name: 'Pizza Diavola',
-            price: '9$'
-        },
-        {
-            name: 'Beefsteak',
-            price: '17$'
-        },
-        {
-            name: 'Napoleon',
-            price: '7$'
-        }
-    ],
-    waitors: [
-        {name: 'Alice', age: 22}, {name: 'John', age: 24}
-    ],
-    averageLunchPrice: '20$',
-    openNow: true
-};
+// const restorantData = {
+//     menu: [
+//         {
+//             name: 'Salad Caesar',
+//             price: '14$'
+//         },
+//         {
+//             name: 'Pizza Diavola',
+//             price: '9$'
+//         },
+//         {
+//             name: 'Beefsteak',
+//             price: '17$'
+//         },
+//         {
+//             name: 'Napoleon',
+//             price: '7$'
+//         }
+//     ],
+//     waitors: [
+//         {name: 'Alice', age: 22}, {name: 'John', age: 24}
+//     ],
+//     averageLunchPrice: '20$',
+//     openNow: true
+// };
 
 
 
@@ -1260,17 +1260,33 @@ const restorantData = {
 
 // transferWaitors(restorantData);
 
-function copyingWaitors(data) {
-    let waitorsCopy = {};
+// function copyingWaitors(data) {
+//     let waitorsCopy = {};
 
-    let key;
-    for (key in data) {
-        waitorsCopy[key] = data[key];
-    }
-    console.log(waitorsCopy);
-    waitorsCopy[0] = {name: 'Mike', age: 32};
-    return waitorsCopy;
-}
+//     let key;
+//     for (key in data) {
+//         waitorsCopy[key] = data[key];
+//     }
+    
+//     waitorsCopy[0] = {name: 'Mike', age: 32};
+//     console.log(waitorsCopy);
+//     return waitorsCopy;
+// }
 
-copyingWaitors(restorantData.waitors);
+// copyingWaitors(restorantData.waitors);
+
+// function transferWaitors(data) {
+//     let waitorsCopy = {};
+
+//     let key;
+//     for (key in data) {
+//         waitorsCopy[key] = data[key];
+//     }
+    
+//     waitorsCopy[0] = {name: 'Mike', age: 32};
+//     console.log(waitorsCopy);
+//     return waitorsCopy;
+// }
+
+// transferWaitors(restorantData.waitors);
 
