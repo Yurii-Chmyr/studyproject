@@ -1197,3 +1197,80 @@
 //     console.log(num);
 // }
 
+// console.log(typeof([] + false));
+
+const restorantData = {
+    menu: [
+        {
+            name: 'Salad Caesar',
+            price: '14$'
+        },
+        {
+            name: 'Pizza Diavola',
+            price: '9$'
+        },
+        {
+            name: 'Beefsteak',
+            price: '17$'
+        },
+        {
+            name: 'Napoleon',
+            price: '7$'
+        }
+    ],
+    waitors: [
+        {name: 'Alice', age: 22}, {name: 'John', age: 24}
+    ],
+    averageLunchPrice: '20$',
+    openNow: true
+};
+
+
+
+// function isOpen(prop) {
+//     if (prop.openNow === true) {
+//         return 'Відкрито'; }
+//         else {
+//         return 'Закрито';
+//         }
+ 
+// }
+
+// console.log(isOpen(restorantData));
+
+// function isAverageLunchPriceTrue(fDish, sDish, average) {
+//     if (parseInt(fDish) + parseInt(sDish) < parseInt(average)) {
+        
+//         return 'Цена ниже средней';
+//     } else {
+//         return 'Цена выше средней';
+//     }
+    
+// }
+
+// console.log(isAverageLunchPriceTrue(restorantData.menu[1].price, restorantData.menu[0].price, restorantData.averageLunchPrice));
+
+// function transferWaitors(data) {
+//     const waitors = [data.waitors];
+//     const copyWaitors = [...waitors];
+//     copyWaitors[1] = {name: 'Mike', age: 32};
+//     console.log(copyWaitors);
+//     console.log(waitors);
+// }
+
+// transferWaitors(restorantData);
+
+function copyingWaitors(data) {
+    let waitorsCopy = {};
+
+    let key;
+    for (key in data) {
+        waitorsCopy[key] = data[key];
+    }
+    console.log(waitorsCopy);
+    waitorsCopy[0] = {name: 'Mike', age: 32};
+    return waitorsCopy;
+}
+
+copyingWaitors(restorantData.waitors);
+
